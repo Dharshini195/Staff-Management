@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Staff Information Management</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1><u>Staff Information Management</u></h1>
+
+    <!-- Form to add new staff -->
+    <div id="addStaffForm" class="form-container">
+        <center><u><h2>Add New Staff</h2></u></center>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" required>
+
+            <label for="qualifications">Qualifications:</label>
+            <input type="text" id="qualifications" required>
+
+            <label for="role">Role:</label>
+            <input type="text" id="role" required>
+
+            <label for="contact">Contact number:</label>
+            <input type="email" id="contact" required>
+
+            <button onclick="addStaff()">Add Staff</button>
+        </form>
+    </div>
+
+    <!-- Display staff information -->
+    <div id="staffList" class="staff-list-container">
+        <center><u><h2>Staff List</h2></u></center>
+        <ul id="staffInfoList"></ul>
+    </div>
+    <!-- Update staff information -->
+    <div id="updateStaffForm" class="form-container" style="display: none;">
+        <center><u><h2>Update Staff Information</h2></u></center>
+        <form>
+            <label for="updateName">Full Name:</label>
+            <input type="text" id="updateName" required>
+
+            <label for="updateAge">Age:</label>
+            <input type="number" id="updateAge" required>
+
+            <label for="updateQualifications">Qualifications:</label>
+            <input type="text" id="updateQualifications" required>
+
+            <label for="updateRole">Role:</label>
+            <input type="text" id="updateRole" required>
+
+            <label for="updateContact">Contact number:</label>
+            <input type="text" id="updateContact" required>
+
+            <button onclick="updateStaff()">Update Staff</button>
+            <button onclick="cancelUpdate()">Cancel</button>
+        </form>
+    </div>
+</body>      
+<script src="app.js"></script>
+</body>
+</html>
